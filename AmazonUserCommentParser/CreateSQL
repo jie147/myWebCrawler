@@ -1,0 +1,50 @@
+docker run --name mysql-server -v /workspace/dockerData/mysql:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=laijie -d mysql/mysql-server:latest
+
+
+#create amazonUserMes database
+create database amazonUserComments CHARACTER set 'utf8' COLLATE 'utf8_general_ci';
+use amazonUserComments;
+CREATE TABLE urlmanager
+(
+	url varchar(1000),
+	urlflag int
+) ENGINE=InnoDB default charset=utf8;
+
+create index url_index on urlmanager(url);
+
+#userID='R3O1JS0NG28TB7', content='好用~味道是香香的，闻起来很有安全感', time='000 名评论人', helpMess='2', thingsID='null', thingsName='null', stars='5.0', contentSummary='便宜好用'
+create table userComment
+(
+	userId varchar(20),
+	userName varchar(100),
+	content text,
+	time varchar(20),
+	helpPersons int,
+	thingId varchar(20),
+	thingName varchar(300),
+	stars float,
+	contentSummary varchar(500)
+) ENGINE=InnoDB default charset=utf8;
+
+create table thingMes
+(
+	thingId varchar(20),
+	thingName varchar(300),
+	classType varchar(200),
+	keywords varchar(500),
+	money double,
+	sumStars double,
+	details text,
+	content text
+) ENGINE=InnoDB default charset=utf8;
+
+#test
+insert into thingMes(thingId,thingName,classType,money,sumStars,details) values ("thing id","thing name","class type",34.0,5.0,"test details");
+
+#test insert data
+insert into urlmanager(url,urlflag) values ("www.baidu.com",0);
+#userID='R22O1HWRJ5M1L0', content='东东很好，家用尤其适合。', time='014年9月29日', helpMess='1', thingsID='null', thingsName='null', stars='5.0', contentSummary='物流给力！'}
+insert into userComment (userId,userName,content,time,helpPersons,thingId,thingName,stars,contentSummary) values ("userId","userName","content","time",1,"thingId","thingName",5.0,"contentSummary");
+
+
+select * from urlmanager where url = "www.baidu.com";

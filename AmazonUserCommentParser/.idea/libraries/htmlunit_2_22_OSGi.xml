@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="htmlunit-2.22-OSGi">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/htmlunit-2.22-OSGi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsoup-1.9.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.0.4-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

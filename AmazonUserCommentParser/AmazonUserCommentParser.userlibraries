@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="commons-httpclient-3.0">
+    <archive path="/workspace/mycode/webparser/AmazonUserCommentParser/lib/commons-httpclient-3.0.jar" />
+  </library>
+  <library name="htmlunit-2.22-OSGi">
+    <archive path="/workspace/mycode/webparser/AmazonUserCommentParser/lib/htmlunit-2.22-OSGi.jar" />
+    <archive path="/workspace/mycode/webparser/AmazonUserCommentParser/lib/jsoup-1.9.2.jar" />
+    <archive path="/workspace/mycode/webparser/AmazonUserCommentParser/lib/mysql-connector-java-5.0.4-bin.jar" />
+  </library>
+</eclipse-userlibraries>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true">
+	<output-test url="file://$MODULE_DIR$/out/test/AmazonUserCommentParser"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<levels>
+		<level name="htmlunit-2.22-OSGi" value="project"/>
+		<level name="commons-httpclient-3.0" value="project"/>
+	</levels>
+</component>
